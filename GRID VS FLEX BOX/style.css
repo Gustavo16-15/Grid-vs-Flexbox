@@ -21,10 +21,10 @@ background-color: blue;
   /* align-items: flex-end; */
  /* align-items: start; */
 /* align-items: baseline; */
-/* A align-itemspropriedade especifica o alinhamento padrão para itens dentro de um flexbox ou contêiner de grade */
+/* A align-items propriedade especifica o alinhamento padrão para itens dentro de um flexbox ou contêiner de grade */
     height: 300px;   
    gap: 1px;;
-   /* A gappropriedade define o tamanho do espaço entre as linhas e entre as colunas em layouts flexbox, de grade ou multicolunas.  */
+   /* A gap propriedade define o tamanho do espaço entre as linhas e entre as colunas em layouts flexbox, de grade ou multicolunas.  */
 column-gap: 1px;
 grid-auto-columns: max-content;
 /* A grid-auto-columns propriedade define um tamanho para as colunas em um contêiner de grade. */
