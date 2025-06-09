@@ -1,0 +1,57 @@
+ 
+.linha{
+    display : flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+.linha2{
+    background-color: lightcoral;
+    min-height: 50px;
+    
+    padding: 10px;
+    border: 1px solid black;
+    flex :50%;
+}
+.linha3{
+    background-color: lightseagreen;
+    min-height: 50px;   
+ 
+    border: 1px solid black;
+    flex :50%;
+}
+@media (max-width: 800px) {
+    .linha2, .linha3{      
+        flex: 100%;
+    }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Default is row */
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+   flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}

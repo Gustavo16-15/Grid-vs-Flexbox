@@ -1,0 +1,48 @@
+.content{
+    display: grid;
+    /* grid-auto-flow: column dense; */
+    /* A grid-auto-flowpropriedade controla como os itens colocados automaticamente são inseridos na grade. */
+     grid-template-columns: auto auto auto ; 
+     grid-template-rows: auto auto auto;
+     grid-template-areas:'myarea myarea2 myarea2 '
+                         'myarea myarea2 myarea2'  
+                          ;
+    /* A grid-template-areas propriedade define áreas nomeadas dentro de um contêiner de grade. */      
+     
+background-color: blue;
+    padding: 20px;
+   /* align-content: center; */
+   /* align-content: flex-start;*/
+    /* align-content: flex-end;  */
+   /* align-content: space-between; */
+   /* align-content:  space-around; */
+   /* align-content:  space-evenly; */
+   /* Alinha verticalmente toda a grade dentro do contêiner (quando o tamanho total da grade é menor que o do contêiner) */
+  /* align-items: flex-end; */
+ /* align-items: start; */
+/* align-items: baseline; */
+/* A align-itemspropriedade especifica o alinhamento padrão para itens dentro de um flexbox ou contêiner de grade */
+    height: 300px;   
+   gap: 1px;;
+   /* A gappropriedade define o tamanho do espaço entre as linhas e entre as colunas em layouts flexbox, de grade ou multicolunas.  */
+column-gap: 1px;
+grid-auto-columns: max-content;
+/* A grid-auto-columns propriedade define um tamanho para as colunas em um contêiner de grade. */
+}
+.content div{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 20px 0;
+    margin: 20px;
+    text-align: center; 
+     
+     
+}
+#item1{
+    grid-area: myarea2;
+    
+}
+#item2{
+    grid-area: myarea;
+     
+}

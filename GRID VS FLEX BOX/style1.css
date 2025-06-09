@@ -1,0 +1,109 @@
+
+.content{
+    display: grid;
+     grid-template: "myarea myarea myarea" 90px
+                    'myarea2 myarea2 myarea2'100px
+                   /200px; 
+                  /* justify-self: center;  */
+    height: auto;
+    padding: 20px;
+    gap: 10px ;
+    justify-content: center;
+    /* A justify-contentpropriedade alinha os itens do contêiner flexível quando os itens não usam todo o espaço disponível no eixo principal (horizontalmente). */
+     justify-items: center;
+    background-color: yellow;
+
+}
+.content div{
+    background-color: orangered;
+    height: auto;
+    padding: 20px 0;
+     justify-self: last baseline;
+     align-self: center; 
+    /* A justify-self propriedade alinha um item de grade dentro de sua célula de grade na direção inline. */
+    width: 90%;
+}
+
+#item1{
+    grid-area: myarea;
+}
+#item2{
+    grid-area: myarea2;
+}
+
+.content2{
+    display :flex;
+    background-color: blue;
+    width: 500px;
+    row-gap: 10px;
+    height: auto;
+     flex-direction: row;
+    /* A flex-directionpropriedade especifica a direção de exibição dos itens flexíveis no contêiner flexível.
+    Essas propriedaddes podem ter os seguintes valores 
+    row , column, row-reverse, column-reverse  */
+     
+    justify-content: center; 
+
+   /* align-items: center; */
+     
+
+      flex-wrap: wrap ;
+      /* A flex-wrap propriedade especifica se os itens flexíveis devem ser quebrados ou não, caso não haja espaço suficiente para eles em uma linha flexível. */
+      /* O flex-wrap pode possuir os  seguites valores 
+      wrap, nowrap, wrap-reverse  */
+    
+}
+
+.content2 div{
+    background-color: limegreen;
+    width: 100px;
+     
+    margin: 10px;
+    padding: 10px;
+}
+ 
+#item1{
+    order:2;
+    /* A order propriedade especifica a ordem em que os itens flexíveis aparecem dentro de um contêiner flexível. */
+/* flex-grow: ; */
+    /* A flex-grow propriedade especifica quanto um item flexível deve crescer em relação aos outros itens flexíveis dentro do mesmo contêiner flexível. Isso só acontece se tiver espaço disponivel no conteiner*/
+ flex-basis: 200px;
+    /* A flex-basis propriedade especifica o tamanho inicial de um item flexível antes que o espaço restante seja distribuído. */
+    
+}
+
+#item2{
+    order:1;
+    flex-grow:9;
+    
+}
+
+#item3{
+    order:5;
+    width: 600px;
+    flex-shrink: 9;
+    /* A flex-shrink propriedade especifica o quanto um item flexível encolherá em relação ao restante dos itens flexíveis. */
+     
+}
+#item4{
+    order:3;
+      flex:7 0;
+      /* A flexpropriedade é uma propriedade abreviada para as propriedades flex-grow, flex-shrinke flex-basis. */
+}
+#item5{
+    order:4;
+    flex-grow: 19;
+}
+#item6{
+    order:7;
+    flex-grow: 9;
+   
+}
+#item7{
+    order:0;
+    flex-grow: 9;
+}
+#item8{
+    order:6;
+    flex-grow: 19;
+}
